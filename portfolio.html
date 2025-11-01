@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        html{
+            background-color:black;
+            color:white;
+        }
+        body {
+            font-family:cursive;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #407e84;
+            color: white;
+            padding: 1em 2em;
+            text-align: center;
+        }
+        nav {
+            background-color: #19788b;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        .container {
+            padding: 2em;
+        }
+        .profile-img {
+            height:100px;
+            width: 100px; 
+        }
+        ul {
+            list-style-type: square;
+        }
+        h2 {
+            color:rgb(10, 124, 124)
+        }
+        tabel{
+            border:1px solid black;
+            border-collapse:collapse;
+        }                            
+        tr:nth-child(odd){
+            background-color:#418ba9
+        }
+        #contact{
+            color:white;
+        }                                                                                        </style>
+    </head>
+    <body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Armeen kafeel</h1>
+        <p><span>Student | Coder</span></p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="photogra.jpg" alt="photot" class="profile-img">
+            <p>Hello! I'm <span>Armeen kafeel</span>, a passionate and hardworking student .</p>
+        </section>
+
+        <!-- Education -->
+         <section id="Education">
+            <h2>Qualification</h2>
+            <table style="width:50%" >
+               <tr> 
+                <td>BCA</td>
+                <td>Integral University</td>
+         </tr>
+               <tr>
+               <td>Intermediate(12th)</td>
+               <td> ICSE Board</td>
+        </tr>
+               <tr>
+                <td>High School(10th)</td>
+                <td> ICSE Board</td>
+            </tr>
+            </table>
+         </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>C++</li>
+                <li>Communication</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p >Email <a  href="armeenkafeel01@gmail.com" target="_blank" >armeenkafeel01@gmail.com</a>.</p>
+            <p>Phone:+91 86044 99238</p>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Armeen kafeel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
