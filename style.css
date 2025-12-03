@@ -1,0 +1,25 @@
+*{
+    padding:0;
+    margin:0;
+    color:black;
+   
+}
+
+#navbar{
+    height:60px;
+    background-color:rgb(61, 137, 162);
+     background-image:url("cat.jpg");
+    background-size:cover;
+   
+}
+#logo{
+    color:rgb(2, 1, 2);
+    font-size:25px;
+}
+a{
+    margin-right:200px;
+    text-decoration:none;
+    font-size:20px;
+}
+
+ 
