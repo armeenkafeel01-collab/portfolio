@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Example</title>
+    <style>
+        
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            margin: auto;
+            background-color: white;
+            border-collapse: collapse;
+            width: 50%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ccc;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 95%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Feedback Form</h2>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td><label for="name">Full Name:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Enter your full name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Contact Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" placeholder="e.g., +1 234 567 890" pattern="[+0-9 ]{7,15}" required></td>
+            </tr>
+            <tr>
+                <td><label for="feedback"> Feedback:</label></td>
+                <td><input type="text" id="feedback" name="feedback" placeholder="Your Feedback here..."></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
