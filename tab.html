@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Lists with Different Styles</title>
+    <style>
+        /* Styling for the main ordered list */
+        ol.main-ordered-list {
+            list-style-type: upper-roman; /* Roman numerals for main ordered list */
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        /* Styling for the nested unordered list within the main ordered list */
+        ol.main-ordered-list ul {
+            list-style-type: square; /* Square bullets for nested unordered list */
+            margin-left: 20px;
+            padding-left: 0;
+            color: darkblue;
+        }
+
+        /* Styling for the main unordered list */
+        ul.main-unordered-list {
+            list-style-type: circle; /* Circle bullets for main unordered list */
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        /* Styling for the nested ordered list within the main unordered list */
+        ul.main-unordered-list ol {
+            list-style-type: lower-alpha; /* Lowercase alphabet for nested ordered list */
+            margin-left: 20px;
+            padding-left: 0;
+            color: darkgreen;
+        }
+
+        /* Styling for a deeply nested unordered list */
+        ul.main-unordered-list ol ul {
+            list-style-type: disc; /* Default disc for deeply nested unordered list */
+            margin-left: 20px;
+            padding-left: 0;
+            color: purple;
+        }
+
+        /* General styling for list items */
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Nested Lists </h1>
+
+    <h2>Ordered List with Nested Unordered List</h2>
+    <ol class="main-ordered-list">
+        <li>Cold drink</li>
+        <li>Hot beverage
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Unordered List with Nested Ordered List</h2>
+    <ul class="main-unordered-list">
+        <li>Milk</li>
+        <li>Bread
+            <ol>
+                <li>White bread</li>
+                <li>Brown bread
+                    <ul>
+                        <li>Sourdough</li>
+                        <li>Rey bread</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ul>
+
+</body>
+</html>
